@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Angular Trix Editor</title>
+    <script src="build/bundle.js"></script>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/trix/0.9.2/trix.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/trix/0.9.2/trix.js"></script>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+
+<body>
+    <div id="app" class="container" ng-app="app" ng-controller="appController">
+        <h1 class="container__title">Editor</h1>
+        <trix-editor angular-trix ng-model="text" class="trix-content container__input"></trix-editor>
+        <h1 class="container__title">Output</h1>
+        <div class="container__output" ng-bind-html="getTrustedHtml(text)"></div>
+    </div>
+</body>
+
+</html>

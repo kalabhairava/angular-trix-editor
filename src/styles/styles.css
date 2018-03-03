@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html {
+	font-size: 10px;
+	margin: 0;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: montserrat, sans-serif;
+}
+
+.container {
+	font-size: 1.4rem;
+	width: 80%;
+	margin: 2rem auto;
+}
+
+.container__input {
+	border-radius: 0 0 3px 3px;
+}
+
+.container__output {
+	border: 1px solid #bbb;
+	padding: 0.5rem;
+	border-radius: 3px;
+	min-height: 5rem;
+}
+
+.container__output blockquote {
+	margin: 0 0 0 5px;
+	padding: 0 0 0 10px;
+	border-left: 5px solid #ccc;
+}
+
+.container__output pre {
+	font-family: monospace;
+	font-size: 12px;
+	margin: 0;
+	padding: 10px;
+	white-space: pre-wrap;
+	background-color: #eee;
+}
+
+.container__output ul,
+.container__output ol,
+.container__output li {
+	margin: 0;
+	padding: 0;
+}
+
+.container__output ul li,
+.container__output ol li {
+	margin-left: 2rem;
+}
+
+.container__title {
+	text-align: center;
+	text-decoration: underline;
+}
+
+trix-toolbar {
+	border: 1px solid #bbb;
+	border-bottom: 0;
+	background-color: #fbfbfb;
+	padding: 0.5rem;
+	border-radius: 3px 3px 0 0;
+}
+
+trix-toolbar .button_group {
+	margin: 0;
+}
