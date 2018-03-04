@@ -12,9 +12,17 @@
 <body>
     <div id="app" class="container" ng-app="app" ng-controller="appController">
         <h1 class="container__title">Editor</h1>
-        <trix-editor angular-trix ng-model="text" class="trix-content container__input"></trix-editor>
+        <trix-editor 
+            angular-trix 
+            ng-model="data.text"
+            ng-change="data.$save()" 
+            class="trix-content container__input">
+        </trix-editor>
         <h1 class="container__title">Output</h1>
-        <div class="container__output" ng-bind-html="getTrustedHtml(text)"></div>
+        <div 
+            class="container__output" 
+            ng-bind-html="data.text">
+        </div>
     </div>
 </body>
 
